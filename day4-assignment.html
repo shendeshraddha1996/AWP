@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--internal-->
+        <script>
+            function start(){
+                alert("BEGIN");
+            }
+        </script>
+       
+        <!--external-->
+        <script src="day4-assignment.js"></script>
+        <style>
+              html,body{
+             margin:0;
+            }
+        </style>
+    </head>
+    <body>
+    <div style='height:100vh;width:100vw;display:flex;flex-direction:column'>
+       <div style='background: rgb(206, 49, 114);flex:1'>
+            <!--inline-->
+            <button id="id1"onclick="alert('WELCOME')" style="color:red">CLICK ME</button><br><br>
+            <!--internal-->
+            <button onclick="start()">START</button> <br><br>
+            <!--external-->
+             <button onclick="end()">CLICK ME</button><br><br>
+        </div> 
+
+       <div style='background: rgb(64, 143, 180);flex:5;display:flex;justify-content:center;align-items:center;flex-direction:column'>
+        <div id="counterid"style="font-size:70px;font-weight:bold;">1</div> 
+        <div>
+         <button onclick="increment()"style="font-size:25px;padding:5px;margin:15px">INCREMENT</button>
+         <button onclick="decrement()"style="font-size:25px;padding:5px;margin:15px">DECREMENT</button>
+        </div>
+        </div>
+    </div>
+    </body>
+</html>
