@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            //callback functions
+           
+                function fun1(fun2){
+                fun2();
+                }
+                fun1();  //error
+
+                fun1(function(){});  //it will call properly
+
+                fun1(function(){console.log("cdac");});
+
+                let fun2=function(){};
+                fun1(fun2);
+
+                let fun=()=>{};
+                fun1(fun);
+
+            //types of function
+                    //named function
+                function fun1(){
+                    console.log("welcome");
+                }
+
+                    //anonymous function
+                let fun4 = function (){
+                    console.log("welcome");
+                }
+
+                    //arrow function
+                let fun7=()=>{
+                    console.log("welcome");
+                }
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+

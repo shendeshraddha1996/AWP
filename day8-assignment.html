@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            //global functions
+             setInterval(function(){console.log("hello")},2000);
+            setInterval(()=>{console.log("hello")},3000);
+
+            let a=function(){console.log("hello")};
+            setInterval(a,3000);
+
+             //array declaration
+            let arr=[];
+            let arr1=[1,2,3,4];
+            let arr3=["shraddha",20,true,"xyz"];
+            console.log(arr);
+            console.log(arr3[1]);
+
+            //push and pop
+            arr3.push("shende");
+            console.log(arr3);
+            arr3.pop();
+            console.log(arr3); 
+
+            //sorting of array
+            let a=[69,45,23,90];
+            a.sort();
+            console.log(a);
+            a.reverse();
+            console.log(a); 
+
+            //splice the elements
+            let abc=["shraddha","prajkta","pravin","abhi"];
+                abc.splice(1,2,"shende");
+                console.log(abc); 
+           
+            //to access all elements of array
+                for( let i=1;i<abc.length;i++)
+                {
+                    console.log(abc[i]);
+                } 
+
+            //JSON object fundamentals
+            let person={name:"shraddha",age:20,gender:"female"};
+            console.log(person);
+            let abc={name:"shraddha",list:[2,4,6,8],age:20};
+            console.log(abc);
+
+            let arra=[abc];
+            console.log(arra);
+
+         </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
