@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let count=1;
+            let cmntc=1;
+            function counter(){
+               const x = document.querySelector(".btn");
+                    x.innerHTML="like  "+count;
+              count++;
+
+            }
+            function comment(){
+               const newelement=document.createElement("div");
+                     newelement.style.display="flex";
+                     newelement.style.justifyContent="space-between";
+                    child1=document.createElement("div");
+                    child2=document.createElement("button");
+                   
+                    child1.textContent=document.querySelector(".post").value;
+                    child2.innerHTML="delete";
+                    newelement.appendChild(child1);
+                    newelement.appendChild(child2);
+                   // newelement.textContent=document.querySelector(".post")
+               const comment= document.querySelector('#commentbox');
+               
+               comment.insertBefore(newelement,commentbox.firstChild);
+               cmntc++;
+               document.querySelector(".post").value="";
+            }
+           
+        </script>
+    </head>
+    <body>
+            <input class="post"type="text" placeholder="" value="post something">
+
+            <button onclick="counter()" class="btn"style="">like </button>
+   
+            <button onclick="comment()" class="cmnt" style="">Comment</button>
+            
+              <p id="commentbox" style="flex:1;"></p>  
+             
+        
+    </body>
+</html>
